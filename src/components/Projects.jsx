@@ -54,23 +54,9 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="py-20 px-6 bg-[#111111] text-white">
+    <section id="projects" className="py-20 px-6 bg-[#111111] text-white">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        {/* <div className="text-center mb-16 animate-fade-in-up">
-          <h2
-            className="text-5xl font-bold mb-4 bg-clip-text text-transparent"
-            style={{
-              backgroundImage: "linear-gradient(90deg, #FB2C36 20%, #292929)",
-            }}
-          >
-            Recent Projects
-          </h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Here are some of my latest works showcasing full-stack development,
-            system architecture, and problem-solving skills.
-          </p>
-        </div> */}
         <SectionHeader title="Recent Projects" description="Here are some of my latest works showcasing full-stack development,
             system architecture, and problem-solving skills."/>
 

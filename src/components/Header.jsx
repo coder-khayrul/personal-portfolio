@@ -19,7 +19,7 @@ const Header = () => {
             className='text-[18px] font-medium text-white hover:text-main duration-500'
         >Education</Link></li>
         <li><Link
-            to="project"
+            to="projects"
             smooth={true}
             duration={800}
             offset={-70}

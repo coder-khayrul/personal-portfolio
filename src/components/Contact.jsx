@@ -5,6 +5,7 @@ import { FiLinkedin, FiGithub } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 import { LuSend } from "react-icons/lu";
 import { IoShareSocial } from "react-icons/io5";
+import SectionHeader from "./ui/SectionHeader";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -58,9 +59,7 @@ const Contact = () => {
       style={{ backgroundColor: "#111111", color: "#fff" }}
     >
       <div className="container mx-auto max-w-4xl">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-[#FB2C36]">
-          Get In Touch
-        </h2>
+        <SectionHeader title={"Get In Touch"} description={"I’m always open to collaboration, freelance opportunities, or a friendly chat. Reach out and let’s build something amazing together."}/>
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Left Form Section */}

@@ -1,6 +1,7 @@
 import { LuGraduationCap } from "react-icons/lu";
 import { LuAward } from "react-icons/lu";
 import { FiBookOpen } from "react-icons/fi";
+import SectionHeader from "./ui/SectionHeader";
 
 const Education = () => {
   const education = [
@@ -40,10 +41,7 @@ const Education = () => {
       style={{ backgroundColor: "#111111", color: "#FFFFFF" }}
     >
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-main">
-          Education & Certifications
-        </h2>
-
+      <SectionHeader title={"Education & Certification"}  description={"A showcase of my academic achievements and professional certifications that reflect my commitment to continuous learning and skill development."}/>
         <div className="relative">
           {/* Timeline line */}
           <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-main to-[#292929]" />
