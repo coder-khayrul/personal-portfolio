@@ -152,7 +152,7 @@ const AboutMe = () => {
             {/* CTA Button */}
             <Button>
               <HiDownload className="h-5 w-5" />
-              Download Resume
+              <a href="/Khayrul_Islam_Resume.pdf" download="Khayrul_Islam_Resume">Download CV</a>
             </Button>
 
             {/* Social Links */}
@@ -190,8 +190,10 @@ const AboutMe = () => {
             {/* Card A: MyBio */}
             <div className={`card bg-[#292929] border border-[#3a3a3a] shadow-xl ${isVisible ? "fade-in-up-delay" : "opacity-0"}`}>
               <div className="card-body">
-                <h3 className="card-title text-2xl mb-4 text-white">Hi, I'm Khayrul — a Passionate Front-End Developer.</h3>
-                <div className="space-y-4 text-gray-400 leading-relaxed">
+                <h3 className="card-title text-2xl mb-4 text-white">Hi, I'm Khayrul — <div className="bg-clip-text text-transparent" style={{
+                    backgroundImage: "linear-gradient(90deg, #FB2C36 30%, #a81f26ff)",
+                }}>a Passionate Front-End Developer.</div></h3>
+                <div className="space-y-4 text-gray-400 text-[15px] leading-relaxed">
                   <p>
                     I’m a <strong className="text-white">Front-End Web Developer</strong> who loves transforming creative ideas
                     into visually stunning, functional, and responsive websites. I specialize in
@@ -216,7 +218,14 @@ const AboutMe = () => {
             {/* Card B: The Stack */}
             <div className={`card bg-[#292929] border border-[#3a3a3a] shadow-xl ${isVisible ? "fade-in-up-delay" : "opacity-0"}`}>
               <div className="card-body">
-                <h3 className="card-title text-2xl mb-6 text-white">My Technical Toolkit</h3>
+               <h3 className="text-3xl font-bold mb-6 text-[#FB2C36] drop-shadow-[0_0_15px_rgba(251,44,54,0.7)] animate-pulse">
+  My Technical Toolkit
+</h3>
+
+
+
+
+
 
                 {/* Frontend */}
                 <div className="mb-6">
@@ -310,7 +319,9 @@ const AboutMe = () => {
             {/* Card C: The Workflow */}
             <div className={`card bg-[#292929] border border-[#3a3a3a] shadow-xl ${isVisible ? "fade-in-up-delay" : "opacity-0"}`}>
               <div className="card-body">
-                <h3 className="card-title text-2xl mb-6 text-white">My Development Focus</h3>
+                 <h3 className="text-3xl font-bold mb-6 text-[#FB2C36] drop-shadow-[0_0_15px_rgba(251,44,54,0.7)] animate-pulse">
+  My Development Focus
+</h3>
                 <div className="grid md:grid-cols-3 gap-6">
                   {workflows.map((workflow, index) => (
                     <div key={index} className="space-y-3">

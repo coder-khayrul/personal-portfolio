@@ -2,6 +2,7 @@ import React from 'react';
 import Container from './ui/Container';
 import bgGif from '../assets/image/bg.gif';
 import Button from './ui/Button';
+import { HiDownload } from 'react-icons/hi';
 const Hero = () => {
     return (
         <div className='mt-[-120px] h-[calc(100vh_+_120px)]'>
@@ -25,7 +26,10 @@ const Hero = () => {
                                 Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
                                 quasi. In deleniti eaque aut repudiandae et a id nisi.
                             </p>
-                            <Button>Hire Me</Button>
+                            <Button>
+                                <HiDownload className="h-5 w-5" />
+                                <a href="/Khayrul_Islam_Resume.pdf" download="Khayrul_Islam_Resume">Download CV</a>
+                            </Button>
                         </div>
                     </div>
                 </Container>
